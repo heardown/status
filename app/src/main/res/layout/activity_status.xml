@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_loading"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="加载" />
+
+    <Button
+        android:id="@+id/btn_empty"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="空布局" />
+
+    <Button
+        android:id="@+id/btn_load_error"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="加载出错" />
+
+    <Button
+        android:id="@+id/btn_network_error"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="网络出错" />
+
+    <Button
+        android:id="@+id/btn_no_login"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="未登录" />
+
+    <Button
+        android:id="@+id/btn_custome"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:onClick="click"
+        android:text="自定义" />
+</LinearLayout>

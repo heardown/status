@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.heardown'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+//apply plugin: 'maven'
+//
+//uploadArchives {
+//    repositories.mavenDeployer {
+//        repository(url: "file:///workspace/maven/")
+//        pom.groupId = "me.winds.status"
+//        pom.artifactId = "status-lib"
+//        pom.version = libVersion
+//    }
+//}
+//
+//
+//
+//publish {
+////    id = '9f581f72fe827a077776a5ccb34a1ceae6e25ebc'
+////    gradlew clean build bintrayUpload -PbintrayUser=winds -PbintrayKey=9f581f72fe827a077776a5ccb34a1ceae6e25ebc -PdryRun=false
+//
+//    userOrg = libUserOrg//bintray账户下某个组织id
+//    groupId = libGroupId //maven仓库下库的包名，一般为模块包名
+//    artifactId = libArtifactId //项目名称
+//    publishVersion = libVersion //版本号
+//    desc = libDesc //项目介绍，可以不写
+//    website = libWebsite //项目主页，可以不写
+//}
